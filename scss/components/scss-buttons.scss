@@ -1,0 +1,17 @@
+@import '../base/_scss-variables';
+
+.read-entry-button {
+    display: inline-block;
+    margin-top: $espaciado-pequeno;
+    margin-left: $espaciado-pequeno * 1.2;
+    margin-right: $espaciado-pequeno * 1.2;
+    padding: 8px 16px;
+    background-color: $color-gris-claro;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $color-gris-oscuro;
+    }
+}

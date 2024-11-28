@@ -1,0 +1,69 @@
+@import '../base/_scss-variables';
+
+.contact {
+    max-width: 1000px;
+    width: 100%;
+    background-color: $color-fondo-secundario;
+    padding: $espaciado-grande;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    .contact-container {
+        display: flex;
+        gap: $espaciado-medio;
+        flex-wrap: wrap;
+    }
+
+    .contact-photo {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .contact-form {
+        flex: 1;
+        min-width: 300px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: $espaciado-pequeno;
+            font-size: $tamano-fuente-base;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            padding: $espaciado-pequeno;
+            margin-bottom: $espaciado-medio;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: $tamano-fuente-base;
+        }
+
+        button {
+            background-color: $color-gris-claro;
+            color: $color-texto-claro;
+            border: none;
+            border-radius: 5px;
+            font-size: $tamano-fuente-base;
+            cursor: pointer;
+            padding: 8px 16px;
+
+            &:hover {
+                background-color: $color-gris-oscuro;
+            }
+        }
+    }
+}

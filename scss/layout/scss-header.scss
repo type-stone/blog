@@ -1,0 +1,53 @@
+@import '../base/_scss-variables';
+
+header {
+    background-color: $color-texto-oscuro;
+    color: $color-texto-claro;
+    text-align: center;
+    padding: $espaciado-grande 0;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: $espaciado-medio;
+            margin: $espaciado-medio;
+
+            li {
+                margin: 0 $espaciado-pequeno;
+            }
+
+            a {
+                color: $color-texto-claro;
+                text-decoration: none;
+                font-size: 1.2rem;
+                position: relative;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $color-acento;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 0;
+                    height: 2px;
+                    background-color: $color-acento;
+                    transition: width 0.3s ease-in-out;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

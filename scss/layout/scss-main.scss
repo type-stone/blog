@@ -1,0 +1,20 @@
+// Base
+@import 'base/_scss-variables';
+@import 'base/_scss-reset';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/buttons';
+
+// Pages
+@import 'pages/index';
+
+// Responsive adicional puede ir aquí
+@media (max-width: $breakpoint-movil) {
+    body {
+        font-size: 14px;
+    }
+}

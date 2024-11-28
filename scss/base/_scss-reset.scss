@@ -1,0 +1,29 @@
+@import '_scss-variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-primaria;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $color-fondo-primario;
+    color: $color-texto-oscuro;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: $espaciado-medio;
+    background-color: $color-fondo-primario;
+}

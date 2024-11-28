@@ -1,0 +1,36 @@
+@import '../base/_scss-variables';
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: $espaciado-pequeno;
+    margin-top: $espaciado-pequeno;
+
+    .circle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &.facebook {
+            background-color: #3b5998;
+        }
+
+        &.twitter {
+            background-color: #1da1f2;
+        }
+
+        &.instagram {
+            background-color: #e1306c;
+        }
+
+        &.linkedin {
+            background-color: #0077b5;
+        }
+    }
+}

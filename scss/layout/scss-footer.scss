@@ -1,0 +1,48 @@
+@import '../base/_scss-variables';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $espaciado-medio;
+    color: $color-texto-claro;
+    background-color: $color-texto-oscuro;
+    border-top: 1px solid #ccc;
+    margin-top: auto;
+
+    p {
+        margin: $espaciado-pequeno 0;
+        color: $color-texto-claro;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: $espaciado-pequeno;
+    margin-top: $espaciado-pequeno;
+
+    .circle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        &.facebook {
+            background-color: #3b5998;
+        }
+
+        &.twitter {
+            background-color: #1da1f2;
+        }
+
+        &.instagram {
+            background-color: #e1306c;
+        }
+
+        &.linkedin {
+            background-color: #0077b5;
+        }
+    }
+}

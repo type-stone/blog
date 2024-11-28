@@ -1,0 +1,24 @@
+// Base
+@import 'base/_scss-reset.scss';
+@import 'base/_scss-variables.scss';
+
+// Layout
+@import 'layout/scss-header.scss';
+@import 'layout/scss-footer.scss';
+@import 'components/scss-social-icons.scss';
+
+// Components
+@import 'components/scss-buttons.scss';
+@import 'components/scss-contact-form.scss';
+
+// Pages
+@import 'pages/scss-index.scss';
+@import 'pages/scss-blog.scss';
+@import 'pages/scss-entry.scss';
+
+// Responsive adicional
+@media (max-width: $breakpoint-movil) {
+    body {
+        font-size: 14px;
+    }
+}
